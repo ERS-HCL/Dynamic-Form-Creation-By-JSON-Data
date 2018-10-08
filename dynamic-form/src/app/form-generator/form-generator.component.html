@@ -1,0 +1,68 @@
+<div class="card col-sm-12 col-md-5 m-2 mx-auto">
+  <h3 class="jumbotron text-center">{{formGeneratorName}}</h3>
+<div *ngFor='let data of jsonFormData' [ngSwitch]="data.tag">
+	<div *ngSwitchCase="'input'">
+		<div class="form-group form-inline">
+			<label class="col-6" [ngStyle]='data.lableStyles'>{{data?.label}}</label>
+			<span 
+      *ngIf='(data.type == "text") 
+      || (data.type =="password") 
+      || (data.type == "number") 
+      || (data.type =="tel") 
+      || (data.type =="email") 
+      || (data.type =="date")'>
+        
+        <input class="form-control" 
+              [type]="data.type" 
+              [placeholder]="data.placeholder" 
+              value={{data.value}} [ngStyle]='data.inputStyles'>
+      </span>
+
+			<span *ngIf='data.type == "radio"' 
+            class="col-6">
+        
+        <span *ngFor="let radioValues of data.values">
+            
+            <input type="radio" 
+                   value="radioValues" 
+                   name='data.name' [ngStyle]='data.inputStyles'>
+          {{radioValues}}
+        </span>
+			</span>
+
+			<span *ngIf='data.type == "checkbox"'>
+        <span *ngFor="let radioValues of data.values">
+            <input type="checkbox"  
+                   value="radioValues" 
+                   name='data.name' [ngStyle]='data.inputStyles'>
+            {{radioValues}} 
+        </span>
+			<span>
+      </span>
+			</span>
+		</div>
+	</div>
+
+	<div *ngSwitchCase="'select'">
+		<div class="form-group form-inline">
+			<label class="col-6" [ngStyle]='data.lableStyles'>{{data?.label}}</label>
+			<select class="form-control col-6" [ngStyle]='data.inputStyles'>
+      <option>{{data.label}}</option>
+          <option value="selectValues" 
+                  *ngFor="let selectValues of data.values">
+               {{selectValues}}
+          </option>
+    </select>
+		</div>
+	</div>
+
+	<div *ngSwitchCase="'button'">
+		<div class="form-group col-4 mx-auto d-flex justify-content-between">
+			<button class="btn btn-primary" 
+              [type]='data.type ? data.type : "button"' [ngStyle]='data.buttonStyle'>
+        {{data.value}}
+      </button>
+		</div>
+	</div>
+</div>
+</div>
