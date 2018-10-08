@@ -46,7 +46,8 @@ FormTypes{
   values?:any;
   name?:string;
   lableStyles?:any;
-  inputStyles:?any;
+  inputStyles?:any;
+  buttonStyle?:any;
 }
   
 ```
