@@ -24,7 +24,7 @@ Download the src folder in dynamic-form folder and install the required packages
 ```
 
 ## Adding Dynamic-form component in your project
- Download the Dynamic-Form-Creation-by-JSON.component to your angular project and include required components from angular.
+ Download the form-generation.component from dynamic-form/src/app folder to your angular project and include required components from angular.
 
 ```html
 
@@ -51,6 +51,103 @@ FormTypes{
   buttonStyle?:any;
 }
   
+```
+
+#### Interface Description
+- **lable** it provides the lable for a certain element,
+- **tag**   it provides the what kind tag you want to use i.e  like input,select and ect..,
+- **value**  it provides the value of a particular input,
+- **type**  it provides the type of the input tag for suppose text,password,mail and etc..,
+- **placeholder** it provides the placeholder for an element,
+- **values**  it provides array of values like radio button values and dropdown values and ect..,
+- **name**  it provides the name of element,
+- **lableStyles** it provides the styles for lable,
+- **inputStyles**  it provides styles for the all input elements,
+- **buttonStyles** it provides the styles for the buttons.
+
+### Example JSON File
+```
+formJson:FormTypes[] =[
+    {
+      "label":"Username",
+      "tag":"input",
+      "type":"text",
+      "placeholder":"enter name",
+      value:"Srinivas",
+      "lableStyles":{'font-weight':'bold'},
+      "inputStyles":{'background-color':'#d2d8e0','color':'black'}
+    },
+    {
+      "label":"Email Id",
+      "tag":"input",
+      "type":"email",
+      "placeholder":"please enter email",
+      value:"sri@gmail.com",
+      "lableStyles":{'font-weight':'bold'},
+      "inputStyles":{'background-color':'#d2d8e0','color':'black'}
+    },
+    {
+      "label":"Password",
+      "tag":"input",
+      "type":"password",
+      "placeholder":"please enter your password",
+      "lableStyles":{'font-weight':'bold'},
+      "inputStyles":{'background-color':'#d2d8e0','color':'black'}
+    },
+    {
+      "label":"Mobile Number",
+      "tag":"input",
+      "type":"tel",
+      "placeholder":"enter mobile number",
+      "lableStyles":{'font-weight':'bold'},
+      "inputStyles":{'background-color':'#d2d8e0','color':'black'}
+    },
+    {
+      "label":"Gender",
+      "tag":"input",
+      "type":"radio",
+      "name":"gender",
+      "placeholder":"enter name",
+      values:['male','female'],
+      "lableStyles":{'font-weight':'bold'},
+      "inputStyles":{'background-color':'#d2d8e0','color':'black'}
+    },
+    {
+      tag:'select',
+      values:['1','2','3','4'],
+      label:'user choice',
+      "lableStyles":{'font-weight':'bold'},
+      "inputStyles":{'background-color':'#d2d8e0','color':'black'}
+    },
+    {
+      tag:'input',
+      type:'checkbox',
+      label:'select cources',
+      values:['java','c','.net'],
+      "lableStyles":{'font-weight':'bold'},
+      "inputStyles":{'background-color':'#d2d8e0','color':'black'}
+              
+    },
+    {
+      "label":"Password",
+      "tag":"input",
+      "type":"password",
+      "placeholder":"enter name",
+      "lableStyles":{'font-weight':'bold'},
+      "inputStyles":{'background-color':'#d2d8e0','color':'black'}
+    },
+    {
+      "value":"cancel",
+      "tag":"button"
+    },
+    {
+      "type":"submit",
+      "value":"submit",
+      "tag":"button",
+      "buttonStyle":{'background-color':'#26b536'}
+    }
+  ]
+}
 ```
 
 ## How it works
