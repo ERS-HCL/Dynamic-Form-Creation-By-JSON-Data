@@ -1,4 +1,5 @@
 # Dynamic-Form-Creation-by-JSON is a Component developed in Angular
+Dynamic-Form is a simple component used to creat a form which is designed in angular and bootstrap.
 
 <p align="center">
     <img  alt="Dynamic-Form-Creation-by-JSON" src="Images/dynamic-form-output.png" class="img-responsive">
@@ -8,7 +9,7 @@ To preview demo of Dynamic form creation by json data Component, [Click here](ht
 
 ## Using the complete angular component
 
-Download the dynamic-form folder and install the required packages and run the application.
+Download the src folder in dynamic-form folder and install the required packages and run the application.
 
 ### Installing
 
@@ -22,7 +23,7 @@ Download the dynamic-form folder and install the required packages and run the a
 > ng serve
 ```
 
-## Adding Dynamic-Form-Creation-by-JSON component in your project
+## Adding Dynamic-form component in your project
  Download the Dynamic-Form-Creation-by-JSON.component to your angular project and include required components from angular.
 
 ```html
