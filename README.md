@@ -4,11 +4,11 @@
     <img  alt="Dynamic-Form-Creation-by-JSON" src="Images/dynamic-form-output.png" class="img-responsive">
 </p>
 
-To preview demo of Dynamic form creation by json data Component, [Click here](https://stackblitz.com/edit/angular-smszup?embed=1&file=src/app/app.component.ts&hideExplorer=1&view=preview)
+To preview demo of Dynamic form creation by json data Component, [Click here](https://angular-sllofh.stackblitz.io)
 
 ## Using the complete angular component
 
-Download the Dynamic-Form-Creation-by-JSON folder and install the required packages and run the application.
+Download the dynamic-form folder and install the required packages and run the application.
 
 ### Installing
 
