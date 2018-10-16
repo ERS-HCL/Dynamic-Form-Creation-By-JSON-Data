@@ -122,7 +122,7 @@ formJson:FormTypes[] =[
     {
       tag:'input',
       type:'checkbox',
-      label:'select cources',
+      label:'select courses',
       values:['java','c','.net'],
       "lableStyles":{'font-weight':'bold'},
       "inputStyles":{'background-color':'#d2d8e0','color':'black'}
