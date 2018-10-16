@@ -70,14 +70,6 @@ export class AppComponent  {
               
     },
     {
-      "label":"Password",
-      "tag":"input",
-      "type":"password",
-      "placeholder":"enter name",
-      "lableStyles":{'font-weight':'bold'},
-      "inputStyles":{'background-color':'#d2d8e0','color':'black'}
-    },
-    {
       "value":"cancel",
       "tag":"button"
     },
