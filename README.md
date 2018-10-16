@@ -2,7 +2,7 @@
 Dynamic-Form is a simple component used to creat a form which is designed in angular and bootstrap.
 
 <p align="center">
-    <img  alt="Dynamic-Form-Creation-by-JSON" src="Images/dynamic-form-output.png" class="img-responsive">
+    <img  alt="Dynamic-Form-Creation-by-JSON" src="Images/dynamic-form-output1.png" class="img-responsive">
 </p>
 
 To preview demo of Dynamic form creation by json data Component, [Click here](https://angular-amzzvc.stackblitz.io/)
