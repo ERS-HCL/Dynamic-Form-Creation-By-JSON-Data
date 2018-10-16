@@ -42,7 +42,7 @@ export class AppComponent  {
       "placeholder":"enter mobile number",
       "lableStyles":{'font-weight':'bold'},
       "inputStyles":{'background-color':'#d2d8e0','color':'black'}
-    },
+    },   
     {
       "label":"Gender",
       "tag":"input",
@@ -63,7 +63,7 @@ export class AppComponent  {
     {
       tag:'input',
       type:'checkbox',
-      label:'select cources',
+      label:'select courses',
       values:['java','c','.net'],
       "lableStyles":{'font-weight':'bold'},
       "inputStyles":{'background-color':'#d2d8e0','color':'black'}
