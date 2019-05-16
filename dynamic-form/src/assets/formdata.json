@@ -1,0 +1,100 @@
+[{
+    "label": "Username",
+    "tag": "input",
+    "type": "text",
+    "placeholder": "enter name",
+    "value": "Srinivas",
+    "inputStyles": {
+      "background-color": "#e3e4e8",
+      "font-size": "15px",
+      "color": "black"
+    },
+    "labelStyles": {
+      "font-weight": "bold"
+    }
+  },
+  {
+    "label": "Email Id",
+    "tag": "input",
+    "type": "email",
+    "placeholder": "please enter email",
+    "value": "sri@gmail.com",
+    "inputStyles": {
+      "background-color": "#e3e4e8",
+      "font-size": "15px",
+      "color": "black"
+    },
+    "labelStyles": {
+      "font-weight": "bold"
+    }
+  },
+  {
+    "label": "Password",
+    "tag": "input",
+    "type": "password",
+    "placeholder": "please enter your password",
+    "labelStyles": {
+      "font-weight": "bold"
+    }
+  },
+  {
+    "label": "Mobile Number",
+    "tag": "input",
+    "type": "tel",
+    "placeholder": "enter mobile number",
+    "labelStyles": {
+      "font-weight": "bold"
+    }
+  },
+  {
+    "label": "Gender",
+    "tag": "input",
+    "type": "radio",
+    "name": "gender",
+    "placeholder": "enter name",
+    "values": ["male", "female"],
+    "labelStyles": {
+      "font-weight": "bold"
+    }
+  },
+  {
+    "tag": "select",
+    "values": ["1", "2", "3", "4"],
+    "label": "user choice",
+    "labelStyles": {
+      "font-weight": "bold"
+    },
+    "inputStyles": {
+      "background-color": "#9a9ead",
+      "font-size": "15px",
+      "color": "#fff"
+    }
+  },
+  {
+    "tag": "input",
+    "type": "checkbox",
+    "label": "select cources",
+    "values": ["java", "c", ".net"],
+    "labelStyles": {
+      "font-weight": "bold"
+    }
+  },
+  {
+    "label": "Password",
+    "tag": "input",
+    "type": "password",
+    "placeholder": "enter name",
+    "labelStyles": {
+      "font-weight": "bold"
+    }
+  },
+  {
+    "value": "cancel",
+    "tag": "button"
+  },
+  {
+    "type": "submit",
+    "value": "submit",
+    "tag": "button"
+  }
+]
